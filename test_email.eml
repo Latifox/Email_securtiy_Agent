@@ -1,0 +1,28 @@
+Return-Path: <phishing@malicious-bank.com>
+Received: from suspicious-server.tk ([192.168.1.100])
+	by mx.example.com with ESMTP id ABC123
+	for <victim@example.com>; Wed, 15 Nov 2023 14:30:22 +0000
+Received-SPF: fail (example.com: domain does not designate 192.168.1.100 as permitted sender)
+Authentication-Results: mx.example.com;
+	dkim=fail reason="signature verification failed";
+	spf=fail smtp.mailfrom=phishing@malicious-bank.com
+Message-ID: <20231115143022.ABC123@malicious-bank.com>
+Date: Wed, 15 Nov 2023 14:30:22 +0000
+From: "Your Bank Security" <phishing@malicious-bank.com>
+To: victim@example.com
+Subject: URGENT: Account Suspended - Verify Now
+X-Priority: 1
+Importance: High
+Content-Type: text/html; charset="UTF-8"
+MIME-Version: 1.0
+
+<html>
+<body>
+<h2 style="color: red;">URGENT SECURITY ALERT</h2>
+<p>Your account has been suspended due to suspicious activity.</p>
+<p><strong>IMMEDIATE ACTION REQUIRED:</strong></p>
+<p>Click here to verify: <a href="http://192.168.1.200/fake-verify">Verify Account</a></p>
+<p>Or visit: <a href="https://bit.ly/fake-bank-verify">https://bit.ly/fake-bank-verify</a></p>
+<p><strong>WARNING:</strong> Account will be closed in 24 hours if not verified.</p>
+</body>
+</html> 

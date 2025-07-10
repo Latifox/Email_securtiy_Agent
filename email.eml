@@ -1,0 +1,65 @@
+-------------------------------------------
+
+2025-07-10 22:53:31,968 - INFO - models.py:7421 - AFC is enabled with max remote calls: 10.
+2025-07-10 22:53:32,536 - INFO - _client.py:1740 - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-07-10 22:53:32,541 - ERROR - fast_api.py:850 - Error in event_generator: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Unsupported MIME type: message/rfc822', 'status': 'INVALID_ARGUMENT'}}
+Traceback (most recent call last):
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\adk\cli\fast_api.py", line 839, in event_generator   
+    async for event in runner.run_async(
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\adk\runners.py", line 203, in run_async
+    async for event in invocation_context.agent.run_async(invocation_context):
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\adk\agents\base_agent.py", line 201, in run_async    
+    async for event in self._run_async_impl(ctx):
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\adk\agents\llm_agent.py", line 275, in _run_async_impl
+    async for event in self._llm_flow.run_async(ctx):
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 283, in run_async
+    async for event in self._run_one_step_async(invocation_context):
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 315, in _run_one_step_async
+    async for llm_response in self._call_llm_async(
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 541, in _call_llm_async
+    async for llm_response in llm.generate_content_async(
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\adk\models\google_llm.py", line 170, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\genai\models.py", line 7427, in generate_content     
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\genai\models.py", line 6394, in _generate_content    
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\genai\_api_client.py", line 1111, in async_request   
+    result = await self._async_request(http_request=http_request, stream=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\genai\_api_client.py", line 1056, in _async_request  
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__        
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\tenacity\__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\tenacity\__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result     
+    raise self._exception
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__        
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\genai\_api_client.py", line 1048, in _async_request_once
+    await errors.APIError.raise_for_async_response(client_response)
+  File "C:\Users\root_\Desktop\stage_sekera\venv\Lib\site-packages\google\genai\errors.py", line 156, in raise_for_async_response
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Unsupported MIME type: message/rfc822', 'status': 'INVALID_ARGUMENT'}}
+INFO:     127.0.0.1:62930 - "GET /apps/email_analyzer/users/user/sessions/af290515-9b48-410b-8e9a-a2c6d92fd884 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62932 - "GET /debug/trace/session/af290515-9b48-410b-8e9a-a2c6d92fd884 HTTP/1.1" 200 OK

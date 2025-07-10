@@ -1,0 +1,13 @@
+google-adk
+email-validator
+qrcode[pil]
+opencv-python
+pillow
+pyzbar
+python-magic-bin
+beautifulsoup4
+requests
+validators
+reportlab
+jinja2
+python-dateutil 

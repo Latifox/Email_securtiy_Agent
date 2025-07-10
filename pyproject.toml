@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "email-analyzer-agent"
+version = "0.1.0"
+description = "AI Agent for comprehensive email analysis using Google ADK"
+authors = [
+    {name = "Email Analysis Agent", email = "agent@example.com"},
+]
+dependencies = [
+    "google-adk",
+    "email-validator",
+    "qrcode[pil]",
+    "opencv-python",
+    "pillow", 
+    "pyzbar",
+    "python-magic",
+    "beautifulsoup4",
+    "requests",
+    "validators",
+    "reportlab",
+    "jinja2",
+    "python-dateutil"
+]
+requires-python = ">=3.9"
+dynamic = ["readme"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["email_analyzer*"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+
+[tool.adk.agents]
+email_analyzer = "email_analyzer.agent:root_agent" 

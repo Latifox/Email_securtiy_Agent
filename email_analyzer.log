@@ -1,0 +1,61 @@
+2025-07-10 17:42:18,570 - email_analyzer.agent - INFO - Email Analyzer Agent initialized with model: gemini-2.5-flash
+2025-07-10 17:42:18,570 - email_analyzer.agent - INFO - Creating main orchestrator and agents
+2025-07-10 17:42:18,570 - email_analyzer.agent - INFO - Initializing EmailAnalysisOrchestrator
+2025-07-10 17:42:18,570 - email_analyzer.agent - INFO - Orchestrator initialized at 2025-07-10T17:42:18.570901
+2025-07-10 17:42:18,570 - email_analyzer.agent - INFO - Creating investigation agent
+2025-07-10 17:43:14,979 - email_analyzer.agent - INFO - Email Analyzer Agent initialized with model: gemini-2.5-flash
+2025-07-10 17:43:14,980 - email_analyzer.agent - INFO - Creating main orchestrator and agents
+2025-07-10 17:43:14,980 - email_analyzer.agent - INFO - Initializing EmailAnalysisOrchestrator
+2025-07-10 17:43:14,980 - email_analyzer.agent - INFO - Orchestrator initialized at 2025-07-10T17:43:14.980453
+2025-07-10 17:43:14,980 - email_analyzer.agent - INFO - Creating investigation agent
+2025-07-10 17:43:14,981 - email_analyzer.agent - INFO - Creating content analyzer agent
+2025-07-10 17:43:14,981 - email_analyzer.agent - INFO - Creating report generator agent
+2025-07-10 17:43:14,981 - email_analyzer.agent - INFO - Creating sequential workflow agent
+2025-07-10 17:43:45,036 - email_analyzer.agent - INFO - Email Analyzer Agent initialized with model: gemini-2.5-flash
+2025-07-10 17:43:45,037 - email_analyzer.agent - INFO - Creating main orchestrator and agents
+2025-07-10 17:43:45,037 - email_analyzer.agent - INFO - Initializing EmailAnalysisOrchestrator
+2025-07-10 17:43:45,037 - email_analyzer.agent - INFO - Orchestrator initialized at 2025-07-10T17:43:45.037113
+2025-07-10 17:43:45,038 - email_analyzer.agent - INFO - Creating investigation agent
+2025-07-10 17:43:45,039 - email_analyzer.agent - INFO - Creating content analyzer agent
+2025-07-10 17:43:45,039 - email_analyzer.agent - INFO - Creating report generator agent
+2025-07-10 17:43:45,039 - email_analyzer.agent - INFO - Creating sequential workflow agent
+2025-07-10 17:44:19,950 - email_analyzer.agent - INFO - Email Analyzer Agent initialized with model: gemini-2.5-flash
+2025-07-10 17:44:19,950 - email_analyzer.agent - INFO - Creating main orchestrator and agents
+2025-07-10 17:44:19,950 - email_analyzer.agent - INFO - Initializing EmailAnalysisOrchestrator
+2025-07-10 17:44:19,951 - email_analyzer.agent - INFO - Orchestrator initialized at 2025-07-10T17:44:19.951404
+2025-07-10 17:44:19,951 - email_analyzer.agent - INFO - Creating investigation agent
+2025-07-10 17:44:19,951 - email_analyzer.agent - INFO - Creating content analyzer agent
+2025-07-10 17:44:19,951 - email_analyzer.agent - INFO - Creating report generator agent
+2025-07-10 17:44:19,951 - email_analyzer.agent - INFO - Creating sequential workflow agent
+2025-07-10 17:44:19,951 - email_analyzer.agent - INFO - Creating main email analyzer agent
+2025-07-10 17:44:19,951 - email_analyzer.agent - INFO - Adding report generation tools
+2025-07-10 17:44:31,446 - email_analyzer.agent - INFO - Email Analyzer Agent initialized with model: gemini-2.5-flash
+2025-07-10 17:44:31,446 - email_analyzer.agent - INFO - Creating main orchestrator and agents
+2025-07-10 17:44:31,446 - email_analyzer.agent - INFO - Initializing EmailAnalysisOrchestrator
+2025-07-10 17:44:31,447 - email_analyzer.agent - INFO - Orchestrator initialized at 2025-07-10T17:44:31.446360
+2025-07-10 17:44:31,447 - email_analyzer.agent - INFO - Creating investigation agent
+2025-07-10 17:44:31,447 - email_analyzer.agent - INFO - Creating content analyzer agent
+2025-07-10 17:44:31,447 - email_analyzer.agent - INFO - Creating report generator agent
+2025-07-10 17:44:31,447 - email_analyzer.agent - INFO - Creating sequential workflow agent
+2025-07-10 17:44:31,448 - email_analyzer.agent - INFO - Creating main email analyzer agent
+2025-07-10 17:44:31,448 - email_analyzer.agent - INFO - Adding report generation tools
+2025-07-10 17:44:54,019 - email_analyzer.agent - INFO - Email Analyzer Agent initialized with model: gemini-2.5-flash
+2025-07-10 17:44:54,019 - email_analyzer.agent - INFO - Creating main orchestrator and agents
+2025-07-10 17:44:54,020 - email_analyzer.agent - INFO - Initializing EmailAnalysisOrchestrator
+2025-07-10 17:44:54,020 - email_analyzer.agent - INFO - Orchestrator initialized at 2025-07-10T17:44:54.020124
+2025-07-10 17:44:54,020 - email_analyzer.agent - INFO - Creating investigation agent
+2025-07-10 17:44:54,020 - email_analyzer.agent - INFO - Creating content analyzer agent
+2025-07-10 17:44:54,020 - email_analyzer.agent - INFO - Creating report generator agent
+2025-07-10 17:44:54,021 - email_analyzer.agent - INFO - Creating sequential workflow agent
+2025-07-10 17:44:54,021 - email_analyzer.agent - INFO - Creating main email analyzer agent
+2025-07-10 17:44:54,021 - email_analyzer.agent - INFO - Adding report generation tools
+2025-07-10 17:44:54,021 - email_analyzer.agent - INFO - Total tools available: 9
+2025-07-10 17:44:54,021 - email_analyzer.agent - INFO - Root agent configured successfully
+2025-07-10 17:44:54,021 - email_analyzer.agent - INFO - === EMAIL ANALYZER AGENT STARTUP ===
+2025-07-10 17:44:54,021 - email_analyzer.agent - INFO - Python version: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2025-07-10 17:44:54,021 - email_analyzer.agent - INFO - Working directory: C:\Users\root_\Desktop\stage_sekera
+2025-07-10 17:44:54,022 - email_analyzer.agent - INFO - Environment variables:
+2025-07-10 17:44:54,022 - email_analyzer.agent - INFO -   GOOGLE_GENAI_USE_VERTEXAI: FALSE
+2025-07-10 17:44:54,022 - email_analyzer.agent - INFO -   GOOGLE_API_KEY: Not set
+2025-07-10 17:44:54,022 - email_analyzer.agent - INFO -   GOOGLE_CLOUD_PROJECT: Not set
+2025-07-10 17:44:54,022 - email_analyzer.agent - INFO - === AGENT READY ===
